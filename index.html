@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LIGOTECH LTD — WhatsApp Ordering Solutions</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: #1a1a1a;
+      line-height: 1.6;
+    }
+
+    a { color: #2563eb; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* NAV */
+    nav {
+      background: #fff;
+      border-bottom: 1px solid #e5e7eb;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav .logo { font-size: 1.25rem; font-weight: 700; color: #1a1a1a; }
+    nav .logo span { color: #2563eb; }
+    nav ul { list-style: none; display: flex; gap: 2rem; }
+    nav ul a { color: #4b5563; font-size: 0.95rem; }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+      color: #fff;
+      padding: 5rem 2rem;
+      text-align: center;
+    }
+    .hero h1 { font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem; }
+    .hero p  { font-size: 1.2rem; max-width: 600px; margin: 0 auto 2rem; opacity: 0.9; }
+    .hero .badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.3);
+      padding: 0.4rem 1rem;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      margin-bottom: 1.5rem;
+    }
+
+    /* SECTIONS */
+    section { padding: 4rem 2rem; max-width: 900px; margin: 0 auto; }
+    section h2 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: #1e3a8a;
+    }
+    section p { color: #4b5563; margin-bottom: 1rem; }
+
+    /* CARDS */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 1.5rem;
+    }
+    .card .icon { font-size: 2rem; margin-bottom: 0.75rem; }
+    .card h3 { font-size: 1.05rem; font-weight: 600; margin-bottom: 0.5rem; }
+    .card p  { font-size: 0.9rem; color: #64748b; margin: 0; }
+
+    /* CONTACT */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+    .contact-item { display: flex; align-items: flex-start; gap: 0.75rem; }
+    .contact-item .ci-icon { font-size: 1.4rem; margin-top: 2px; }
+    .contact-item h4 { font-size: 0.85rem; color: #6b7280; text-transform: uppercase; letter-spacing: 0.05em; }
+    .contact-item p  { font-size: 0.95rem; color: #1a1a1a; margin: 0; }
+
+    /* DIVIDER */
+    .divider { border: none; border-top: 1px solid #e5e7eb; margin: 0; }
+
+    /* PRIVACY */
+    #privacy { background: #f8fafc; }
+    #privacy section { padding: 3rem 2rem; }
+    .privacy-content h3 { font-size: 1.1rem; font-weight: 600; margin: 1.5rem 0 0.5rem; color: #1e3a8a; }
+    .privacy-content p, .privacy-content ul { color: #4b5563; font-size: 0.95rem; }
+    .privacy-content ul { padding-left: 1.25rem; margin-bottom: 1rem; }
+    .privacy-content ul li { margin-bottom: 0.3rem; }
+
+    /* FOOTER */
+    footer {
+      background: #1e3a8a;
+      color: rgba(255,255,255,0.7);
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+    }
+    footer strong { color: #fff; }
+
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 1.75rem; }
+      nav ul { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="logo">LIGO<span>TECH</span> LTD</div>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#privacy">Privacy Policy</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="badge">🇬🇧 Registered in England &amp; Wales</div>
+  <h1>WhatsApp Ordering Solutions for Restaurants</h1>
+  <p>LIGOTECH LTD provides technology that lets restaurant customers place food orders directly through WhatsApp using AI-powered conversation.</p>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Us</h2>
+  <p>
+    LIGOTECH LTD is a UK-based technology company registered in England and Wales.
+    We build WhatsApp-based ordering systems that allow restaurants and food businesses
+    to receive orders from customers through WhatsApp, powered by artificial intelligence.
+  </p>
+  <p>
+    Our platform connects restaurant owners with their customers over WhatsApp Business,
+    enabling a seamless ordering experience without the need for a separate app or website.
+  </p>
+</section>
+
+<hr class="divider" />
+
+<!-- SERVICES -->
+<section id="services">
+  <h2>Our Services</h2>
+  <p>We provide technology services to food businesses including:</p>
+  <div class="cards">
+    <div class="card">
+      <div class="icon">🍽️</div>
+      <h3>WhatsApp Food Ordering</h3>
+      <p>Customers browse the menu and place orders through a natural WhatsApp conversation.</p>
+    </div>
+    <div class="card">
+      <div class="icon">🤖</div>
+      <h3>AI Order Assistant</h3>
+      <p>An intelligent assistant that understands customer requests, manages carts, and confirms orders.</p>
+    </div>
+    <div class="card">
+      <div class="icon">📦</div>
+      <h3>Order Management</h3>
+      <p>Restaurant owners receive instant notifications for every new order via email and WhatsApp.</p>
+    </div>
+    <div class="card">
+      <div class="icon">🔌</div>
+      <h3>Restaurant Onboarding</h3>
+      <p>Simple setup for restaurants to connect their WhatsApp Business number and upload their menu.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>Get in touch with us for any enquiries about our services.</p>
+  <div class="contact-grid">
+    <div class="contact-item">
+      <span class="ci-icon">🏢</span>
+      <div>
+        <h4>Registered Address</h4>
+        <p>21 Alma Road<br />Sale, M33 4HE<br />United Kingdom</p>
+      </div>
+    </div>
+    <div class="contact-item">
+      <span class="ci-icon">📞</span>
+      <div>
+        <h4>Phone</h4>
+        <p><a href="tel:+447914933257">+44 7914 933257</a></p>
+      </div>
+    </div>
+    <div class="contact-item">
+      <span class="ci-icon">✉️</span>
+      <div>
+        <h4>Email</h4>
+        <p><a href="mailto:investoronkar@gmail.com">investoronkar@gmail.com</a></p>
+      </div>
+    </div>
+    <div class="contact-item">
+      <span class="ci-icon">👤</span>
+      <div>
+        <h4>Director</h4>
+        <p>Onkar Patil</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- PRIVACY POLICY -->
+<div id="privacy">
+<section>
+  <h2>Privacy Policy</h2>
+  <p><em>Last updated: June 2026</em></p>
+
+  <div class="privacy-content">
+    <h3>1. Who We Are</h3>
+    <p>
+      LIGOTECH LTD ("we", "us", "our") is a company registered in England and Wales.
+      Registered address: 21 Alma Road, Sale, M33 4HE, United Kingdom.
+      Contact: <a href="mailto:investoronkar@gmail.com">investoronkar@gmail.com</a>
+    </p>
+
+    <h3>2. Data We Collect</h3>
+    <p>When customers use our WhatsApp ordering service, we collect:</p>
+    <ul>
+      <li>WhatsApp phone number</li>
+      <li>Display name (as provided by WhatsApp)</li>
+      <li>Order history (items ordered, quantities, prices)</li>
+      <li>Conversation messages related to placing orders</li>
+    </ul>
+
+    <h3>3. How We Use Your Data</h3>
+    <ul>
+      <li>To process and fulfil food orders</li>
+      <li>To send order confirmations and status updates via WhatsApp</li>
+      <li>To personalise your ordering experience (e.g. remembering past orders)</li>
+      <li>To notify restaurant owners of new orders</li>
+    </ul>
+
+    <h3>4. Data Sharing</h3>
+    <p>
+      We share your order details with the restaurant you are ordering from.
+      We do not sell your personal data to third parties.
+      We use the following third-party services to operate our platform:
+    </p>
+    <ul>
+      <li><strong>Meta (WhatsApp Business API)</strong> — for message delivery</li>
+      <li><strong>OpenAI</strong> — for AI-powered order assistance</li>
+      <li><strong>Cloud hosting providers</strong> — for data storage and processing</li>
+    </ul>
+
+    <h3>5. Data Retention</h3>
+    <p>
+      Order data is retained for up to 2 years for business record-keeping purposes.
+      Conversation session data is deleted after 30 minutes of inactivity.
+    </p>
+
+    <h3>6. Your Rights (UK GDPR)</h3>
+    <p>Under UK GDPR you have the right to:</p>
+    <ul>
+      <li>Access the personal data we hold about you</li>
+      <li>Request correction of inaccurate data</li>
+      <li>Request deletion of your data</li>
+      <li>Object to processing of your data</li>
+    </ul>
+    <p>To exercise any of these rights, contact us at <a href="mailto:investoronkar@gmail.com">investoronkar@gmail.com</a>.</p>
+
+    <h3>7. Cookies</h3>
+    <p>This website does not use cookies.</p>
+
+    <h3>8. Contact</h3>
+    <p>
+      For any privacy-related queries, contact:<br />
+      Onkar Patil, LIGOTECH LTD<br />
+      <a href="mailto:investoronkar@gmail.com">investoronkar@gmail.com</a><br />
+      +44 7914 933257
+    </p>
+  </div>
+</section>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p><strong>LIGOTECH LTD</strong> — Registered in England &amp; Wales</p>
+  <p style="margin-top:0.5rem;">21 Alma Road, Sale, M33 4HE, United Kingdom &nbsp;|&nbsp; <a href="mailto:investoronkar@gmail.com" style="color:rgba(255,255,255,0.7)">investoronkar@gmail.com</a></p>
+  <p style="margin-top:0.5rem; font-size:0.8rem;">© 2026 LIGOTECH LTD. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
